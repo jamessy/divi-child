@@ -1,0 +1,20 @@
+/* show/hide the main and top header smoothly */
+#top-header {
+  transition: top .3s ease !important;
+}
+
+#main-header {
+  transition: top 0.8s cubic-bezier(0.77, 0, 0.175, 1), left 0.8s cubic-bezier(0.77, 0, 0.175, 1) !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Show / Hide Divi Header Depending On Page Scroll Direction */
+body * {
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: antialiased !important;
+}
+
+.home #page-container {
+  padding-top: 0px!important;
+}

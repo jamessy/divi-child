@@ -36,3 +36,5 @@ dist/
 *.html
 *.css
 *.map
+
+!style.css

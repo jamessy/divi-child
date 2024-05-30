@@ -2,7 +2,7 @@
 
 function my_et_enqueue_styles() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-    	wp_register_style( 'custom-css', get_stylesheet_directory_uri().'/dist/css/style.css', array(), filemtime( get_stylesheet_directory().'/dist/css/style.css' ) );
+    	wp_register_style( 'custom-css',get_stylesheet_directory().'/dist/css/styles.css', array(), filemtime( get_stylesheet_directory().'/dist/css/styles.css' ) );
 	wp_enqueue_style( 'custom-css' );
 	wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' ), '0.1.1', true );
 }

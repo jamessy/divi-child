@@ -1,8 +1,9 @@
 // webpack.mix.js
 
-let mix = require('laravel-mix');
+let mix = require("laravel-mix");
 
-mix.js('src/js/scripts.js', 'js')
-.sass('src/styles/scss/styles.scss', 'css')
-.setPublicPath('dist')
-.browserSync('http://tobeupdated');
+mix
+  .js("src/js/scripts.js", "js")
+  .sass("src/styles/scss/styles.scss", "css")
+  .setPublicPath("dist")
+  .browserSync("https://ukbusinessai.test");
